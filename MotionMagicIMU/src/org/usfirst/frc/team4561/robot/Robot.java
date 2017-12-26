@@ -109,6 +109,8 @@ public class Robot extends IterativeRobot {
 		_sb.append(_talon.getSpeed());
 		// EAP Send IMU data the SD 
 		SmartDashboard.putData("IMU", imu);
+		SmartDashboard.putDouble("IMU Angle", imu.getAngle());
+
 
 		if (_joy.getRawButton(1)) {
 			/* Motion Magic */
