@@ -109,6 +109,8 @@ public class Robot extends IterativeRobot {
 		_sb.append(_talon.getSpeed());
 		// EAP Send IMU data the SD 
 		SmartDashboard.putData("IMU", imu);
+		// EAP Temp used depreciated cll to putDouble
+		// EAP but the SPI Gyro does work!
 		SmartDashboard.putDouble("IMU Angle", imu.getAngle());
 
 
